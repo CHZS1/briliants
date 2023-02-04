@@ -2,6 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Goldy store</title>
         
         <link rel="stylesheet" type="text/css" href="./stb.dropdown.min.css">
@@ -19,11 +20,17 @@
         <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
     </head>
     <body>
         <header class="header">
             <div class="container header-container">
                 <div class="header__top flex">
+                    <button class="btn-reset burger">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </button>
                     <div class="top-left flex">
                         <select id="select"> 
                             <option class="header__option" value disabled selected>Санкт-Петербург</option>
@@ -81,11 +88,6 @@
                     </div>
                 </div>
                 <div class="header__bottom flex">
-                    <button class="btn-reset burger">
-                        <span class="burger__line"></span>
-                        <span class="burger__line"></span>
-                        <span class="burger__line"></span>
-                    </button>
                     
                     <nav class="header__nav">
                             <ul class="header__list flex">
@@ -136,7 +138,7 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide flex">
+                    <div class="swiper-slide hero-slide flex">
                         <div class="hero__card hero__left">
                             <p class="hero__descr">
                                 Суперскидка до&nbsp;60%
@@ -149,7 +151,7 @@
                         <div class="hero__card hero__right"> 
                         </div>
                     </div>
-                    <div class="swiper-slide flex">
+                    <div class="swiper-slide hero-slide flex">
                         <div class="hero__card hero__left">
                             <p class="hero__descr">
                                 Суперскидка до&nbsp;60%
@@ -162,7 +164,7 @@
                         <div class="hero__card hero__right"> 
                         </div>
                     </div>
-                    <div class="swiper-slide flex">
+                    <div class="swiper-slide hero-slide flex">
                         <div class="hero__card hero__left">
                             <p class="hero__descr">
                                 Суперскидка до&nbsp;60%
@@ -1293,7 +1295,7 @@
 
         <section class="product-day">
             <div class="container product-day__container">
-                <h2 class="product-day__title">Товар дня</h2>
+                <h2 class="title product-day__title">Товар дня</h2>
                 <div class="product-day__list flex">
                     <div class="product-day__item item-left">
 
@@ -1314,13 +1316,13 @@
                             <div class="swiper-wrapper">
                             <!-- Slides -->
                             <div class="swiper-slide">
-                                <img src="images/day-main.png">
+                                <img class="image-for-mobile" src="images/day-main.png">
                             </div>
                             <div class="swiper-slide">
-                                <img src="images/day-main.png">
+                                <img class="image-for-mobile" src="images/day-main.png">
                             </div>
                             <div class="swiper-slide">
-                                <img src="images/day-main.png">
+                                <img class="image-for-mobile" src="images/day-main.png">
                             </div>
                             ...
                             </div>
@@ -1332,7 +1334,7 @@
                             
                         </div>
                     </div>
-                    <div class="product-day__item">
+                    <div class="product-day__item item-right">
                         <div class="rating">
                             <img class="star-vector" src="images/star.svg" alt="raiting">
                             <img class="star-vector" src="images/star.svg" alt="raiting">
@@ -1446,7 +1448,7 @@
                         <div class="day-cart flex">
                             <div class="cart__buttons flex">
                                 <button class="to-cart btn-reset btn-dark">В корзину</button>
-                                <button class="to-cart btn-reset btn-light">Купить в 1 клик</button>
+                                <button class="to-cart btn-reset btn-light">Купить в&nbsp;1&nbsp;клик</button>
                             </div>
                             <div class="cart__actions">
                                 <ul class="actions-list flex">
@@ -1482,7 +1484,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
 
         <section class="articles">
             <div class="container article__container">
@@ -1501,7 +1503,7 @@
                 <ul class="articles__list flex">
                     <li class="articles__item flex">
                         <a class="articles__link" href="#"></a>
-                        <image class="articles__img" src="images/art-1.png" alt="Articles"></image>
+                        <img class="articles__img" src="images/art-1.png" alt="Articles"></img>
                         <div class="articles__text">
                             <p class="date"><time>21&nbsp;сентября 2021</time></p>
                             <p class="articles__descr">
@@ -1511,7 +1513,7 @@
                     </li>
                     <li class="articles__item flex">
                         <a class="articles__link" href="#"></a>
-                        <image class="articles__img" src="images/art-2.png" alt="Articles"></image>
+                        <img class="articles__img" src="images/art-2.png" alt="Articles"></img>
                         <div class="articles__text">
                             <p class="date"><time>25&nbsp;сентября 2021</time></p>
                             <p class="articles__descr">
@@ -1522,7 +1524,7 @@
                     </li>
                     <li class="articles__item flex">
                         <a class="articles__link" href="#"></a>
-                        <image class="articles__img" src="images/art-3.png" alt="Articles"></image>
+                        <img class="articles__img" src="images/art-3.png" alt="Articles"></img>
                         <div class="articles__text">
                             <p class="date"><time>21&nbsp;сентября 2021</time></p>
                             <p class="articles__descr">
@@ -1532,7 +1534,7 @@
                     </li>
                     <li class="articles__item flex">
                         <a class="articles__link" href="#"></a>
-                        <image class="articles__img" src="images/art-4.png" alt="Articles"></image>
+                        <img class="articles__img" src="images/art-4.png" alt="Articles"></img>
                         <div class="articles__text">
                             <p class="date"><time>21&nbsp;сентября 2021</time></p>
                             <p class="articles__descr">
